@@ -1,0 +1,114 @@
+$skinColor: #84CDDD;
+$mouthColor: #D66053;
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+  background: #6ad
+}
+
+.head {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 30em;
+  height: 30em;
+  background: $skinColor;
+  border-radius: 50% 50% 40% 40%;
+  box-shadow: 0 0 0 10px black;
+}
+
+.glass {
+  position: absolute;
+  top: 10em;
+  width: 20em;
+  height: 8em;
+  background: black;
+  border-bottom-left-radius: 70% 100%;
+  border-bottom-right-radius: 30% 100%;
+  overflow: hidden;
+  transform: translateX(-8em) rotateZ(0.05turn);
+  
+  &::before {
+    content: '';
+    display: flex;
+    width: 3em;
+    height: 13em;
+    background: white;
+    transform: translate(8em, -2em) rotateZ(15deg);
+  }
+  
+  &.right {
+    transform: rotateY(.5turn) translateX(-8em) rotateZ(.05turn);
+      
+    &::before {
+    content: '';
+    display: flex;
+    width: 3em;
+    height: 15em;
+    background: white;
+    transform: translate(8em, -4em) rotateZ(-40deg);
+      box-shadow: 0 0 0 10px black, 10px 0 0 5px white;
+    }
+  }
+}
+
+.nose {
+  display: flex;
+  transform: translateY(20em);
+  
+  &::before {
+    content: '';
+    display: flex;
+    position: relative;
+    right: 1em;
+    width: .3em;
+    height: 1.5em;
+    transform: rotateZ(.3turn);
+    background: black;
+  }
+  &::after {
+    content: '';
+    display: flex;
+    position: relative;
+    left: 1em;
+    width: .3em;
+    height: 1.5em;
+    transform: rotateZ(.7turn);
+    background: black;
+  }
+}
+
+.mouth {
+  position: absolute;
+  display: flex;
+  transform: translateY(22em);
+  
+  &::before {
+    content: '';
+    display: flex;
+    position: relative;
+    left: 2.3em;
+    width: 15em;
+    height: 5em;
+    background: $mouthColor;
+    border-radius: 100% 100px 100px 100px;
+    transform: rotateZ(.04turn);
+    box-shadow: inset 0 20px 20px 10px #b65;
+  }
+  &::after {
+    content: '';
+    display: flex;
+    position: relative;
+    right: 2.3em;
+    width: 15em;
+    height: 5em;
+    background: $mouthColor;
+    border-radius: 100px 100% 100px 100px;
+    transform: rotateZ(-.04turn);
+    box-shadow: inset -30px 5px 20px 10px #b65;
+  }
+}

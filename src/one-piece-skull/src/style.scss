@@ -1,0 +1,352 @@
+$hatStraw: #FFCD01;
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ddd;
+  min-height: 100vh;
+  overflow: hidden
+}
+
+.head__container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: .5em;
+}
+
+.bone__left {
+  position: absolute;
+  height: 35em;
+  width: 3em;
+  background: white;
+  transform: rotateZ(-45deg);
+  box-shadow: 0 0 0 10px black;
+  
+  &>.top {
+    &::before {
+      content: '';
+      position: absolute;
+      top: -2em;
+      left: 1em;
+      width: 5em;
+      height: 5em;
+      background: white;
+      border-radius: 50%;
+      box-shadow: 0 0 0 10px black;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      top: -2em;
+      right: 1em;
+      width: 5em;
+      height: 5em;
+      background: white;
+      border-radius: 50%;
+      box-shadow: 0 0 0 10px black;
+    }
+  }
+  
+  &>.topwhite {
+    &::before {
+      content: '';
+      position: absolute;
+      top: -2em;
+      left: 1em;
+      width: 5em;
+      height: 5em;
+      background: white;
+      border-radius: 50%;
+      z-index: 2;
+    }
+   &::after {
+      content: '';
+      position: absolute;
+      width: 3em;
+      height: 5em;
+      background: white;
+      z-index: 2;
+    }  
+  }
+  
+  &>.bottom {
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: -2em;
+      left: 1em;
+      width: 5em;
+      height: 5em;
+      background: white;
+      border-radius: 50%;
+      box-shadow: 0 0 0 10px black;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -2em;
+      right: 1em;
+      width: 5em;
+      height: 5em;
+      background: white;
+      border-radius: 50%;
+      box-shadow: 0 0 0 10px black;
+    }
+  }
+  
+  &>.bottomwhite {
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: -2em;
+      left: 1em;
+      width: 5em;
+      height: 5em;
+      background: white;
+      border-radius: 50%;
+      z-index: 2;
+    }
+   &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      width: 3em;
+      height: 5em;
+      background: white;
+      z-index: 2;
+    }  
+  }
+}
+
+.bone__right {
+  position: absolute;
+  height: 35em;
+  width: 3em;
+  background: white;
+  transform: rotateZ(45deg);
+  box-shadow: 0 0 0 10px black;
+  
+  &>.top {
+    &::before {
+      content: '';
+      position: absolute;
+      top: -2em;
+      left: 1em;
+      width: 5em;
+      height: 5em;
+      background: white;
+      border-radius: 50%;
+      box-shadow: 0 0 0 10px black;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      top: -2em;
+      right: 1em;
+      width: 5em;
+      height: 5em;
+      background: white;
+      border-radius: 50%;
+      box-shadow: 0 0 0 10px black;
+    }
+  }
+  
+  &>.topwhite {
+    &::before {
+      content: '';
+      position: absolute;
+      top: -2em;
+      left: 1em;
+      width: 5em;
+      height: 5em;
+      background: white;
+      border-radius: 50%;
+      z-index: 2;
+    }
+   &::after {
+      content: '';
+      position: absolute;
+      width: 3em;
+      height: 5em;
+      background: white;
+      z-index: 2;
+    }  
+  }
+  
+  &>.bottom {
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: -2em;
+      left: 1em;
+      width: 5em;
+      height: 5em;
+      background: white;
+      border-radius: 50%;
+      box-shadow: 0 0 0 10px black;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -2em;
+      right: 1em;
+      width: 5em;
+      height: 5em;
+      background: white;
+      border-radius: 50%;
+      box-shadow: 0 0 0 10px black;
+    }
+  }
+  
+  &>.bottomwhite {
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: -2em;
+      left: 1em;
+      width: 5em;
+      height: 5em;
+      background: white;
+      border-radius: 50%;
+      z-index: 2;
+    }
+   &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      width: 3em;
+      height: 5em;
+      background: white;
+      z-index: 2;
+    }  
+  }
+}
+
+.head {
+  border: 10em solid;
+  border-radius: 50%;
+  transform: rotateZ(-45deg);
+  border-color: $hatStraw $hatStraw white white;
+  background-color: white;
+  box-shadow: 0 0 0 10px black;
+}
+
+.forehead {
+  position: absolute;
+  width: 20em;
+  height: 3em;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 0 0 0 10px black;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: -8.5em;
+    border-top: 10em solid white;
+    border-right: 10em solid white;
+    border-bottom: 10em solid transparent;
+    border-left: 10em solid transparent;
+    border-radius: 50%;
+    transform: rotateZ(135deg);
+  }
+}
+
+.hat--flap {
+  position: absolute;
+  width: 30em;
+  height: 5em;
+  border-radius: 50%;
+  box-shadow: 0 0 0 10px black;
+  background-color: $hatStraw;
+}
+
+.hat--ribbon {
+  position: absolute;
+  width: 20em;
+  height: 3em;
+  border-radius: 100% 100% 0 0;
+  background-color: red;
+  top: 6em;
+  box-shadow: 0 0 0 10px black;
+}
+
+.nose {
+  position: absolute;
+  bottom: 1em;
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  background-color: black;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    left: 3em;
+    bottom: 3em;
+    width: 6em;
+    height: 6em;
+    border-radius: 50%;
+    background-color: black;
+  }
+  
+  &::after {
+    content: '';
+    position: absolute;
+    right: 3em;
+    bottom: 3em;
+    width: 6em;
+    height: 6em;
+    border-radius: 50%;
+    background-color: black;
+  }
+}
+
+.mouth {
+    position: absolute;
+    bottom: -5em;
+    width: 10em;
+    height: 12em;
+    border-radius: 70% 70% 50% 50%;
+    background-color: white;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 0 0 10px black;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 5em;
+    width: 15em; 
+    height: 10em;
+    border-radius: 50%;
+    box-shadow: 
+      0 0 0 5px black,
+      0 0 0 20px white,
+      0 0 0 22px black,
+      0 0 0 35px white,
+      0 0 0 40px black;
+  }
+}
+
+.teeths {
+    position: absolute;
+    bottom: -2.3em;
+    width: 20em; 
+    height: 15em;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+  
+  &::after {
+      content: '| | | | |';
+      font-size: 4em;
+      position: absolute;
+      bottom: -.2em;
+    }
+}
