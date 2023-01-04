@@ -12,3 +12,6 @@ Repository to save my pure css art.
 
 ## [Homer Simpson](./src/homer-simpson-pure-css/)
 ![Homer Simpson](src/homer-simpson-pure-css/codepen.io_nick-gabe_full_xxYjWKV.png)
+
+## [Sibelius Seraphini](./src/sseraphini-pure-css/)
+![Sibelius Seraphini](src/sseraphini-pure-css/sseraphini.png)
