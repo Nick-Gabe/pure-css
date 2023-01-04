@@ -1,0 +1,218 @@
+/* pallete */
+:root {
+  --skin-color: #E5B391;
+  --skin-shadow-color: #D5A687;
+  --hair-color: #CD6E28;
+  --background-color: #10CC91;
+}
+
+/* base properties */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background-color);
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+/* drawing */
+
+.face {
+  position: relative;
+  width: 12em;
+  height: 15em;
+  border-radius: 50%;
+  background-color: var(--skin-color);
+  overflow: hidden;
+}
+
+.face::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 50%;
+  background-color: var(--skin-shadow-color);
+}
+
+.hair {
+  position: relative;
+  bottom: 10px;
+}
+
+.hair > * {
+  position: absolute;
+  background-color: var(--hair-color);
+  z-index: 5;
+}
+
+.hair .a {
+  width: 7em;
+  height: 5em;
+  border-radius: 0 0 50% 0; 
+  transform: rotate(.13turn);
+  right: 20px;
+  top: -20px;
+}
+
+.hair .b {
+  width: 2.5em;
+  height: 6em;
+  border-radius: 10px 80% 10px;
+  transform: rotate(15deg);
+  top: 40px;
+  right: -19px;
+}
+
+.hair .c {
+  width: 1em;
+  height: 3em;
+  border-radius: 0 100% 10px; 
+  transform: rotate(0deg);
+  top: 85px;
+  left: -10px;
+}
+
+.hair .d {
+  width: 3em;
+  height: 1em;
+  transform: rotate(-80deg);
+  top: 80px;
+  left: -16px;
+}
+
+.hair .e {
+  width: 7em;
+  height: 3em;
+  transform: rotate(-40deg);
+  left: -10px;
+}
+
+.hair .f {
+  width: 2em;
+  height: 5em;
+  transform: rotate(-10deg);
+  border-radius: 0 0 50% 0;
+  top: 24px;
+  left: -18px;
+}
+
+.hair .g {
+  width: 8em;
+  height: 5em;
+  transform: rotate(-20deg);
+  border-radius: 50%;
+  top: -50px;
+  left: 20px;
+}
+
+.hair .h {
+  width: 8em;
+  height: 4em;
+  transform: rotate(-40deg);
+  border-radius: 50%;
+  top: -20px;
+  left: -30px;
+}
+
+.hair .i {
+  width: 12em;
+  height: 2em;
+  transform: rotate(85deg);
+  border-radius: 70% 20% 70% 0;
+  top: 30px;
+  right: -79px;
+}
+
+.hair .J {
+  width: 8em;
+  height: 3em;
+  transform: rotate(85deg);
+  border-radius: 70% 20% 70% 0;
+  top: 5px;
+  right: -55px;
+}
+
+.hair .k {
+  width: 3em;
+  height: 3em;
+  transform: rotateZ(-50deg);
+  left: -40px;
+}
+
+.hair .k::after {
+  position: absolute;
+  content: '';
+  width: 3em;
+  height: 5em;
+  background-color: var(--background-color);
+  border-radius: 50px 100% 0 0;
+  transform: rotateZ(60deg);
+  left: -15px;
+  top: -35px;
+}
+
+.hair .l {
+  width: 3em;
+  height: 4em;
+  transform: rotateZ(-50deg);
+  left: -15px;
+  top: -50px;
+}
+
+.hair .l::after {
+  position: absolute;
+  content: '';
+  width: 3em;
+  height: 3.2em;
+  background-color: var(--background-color);
+  border-radius: 0 100% 0 0;
+  transform: rotateZ(93deg);
+  left: -0px;
+  top: -10px;
+  z-index: 2;
+}
+
+.hair .m {
+  width: 8em;
+  height: 3em;
+  transform: rotate(75deg);
+  top: -75px;
+  right: 10px;
+}
+
+.hair .m::after {
+  position: absolute;
+  content: '';
+  width: 3em;
+  height: 5em;
+  background-color: var(--background-color);
+  border-radius: 100% 0 0 0;
+  transform: rotateZ(105deg);
+  left: -2px;
+  top: -10px;
+  z-index: 2;
+}
+
+.hair .n {
+  width: 8em;
+  height: 4em;
+  transform: rotate(-60deg);
+  top: -45px;
+  right: -15px;
+}
+
+.hair .n::after {
+  position: absolute;
+  content: '';
+  width: 8em;
+  height: 5em;
+  transform: rotate(0deg);
+  border-radius: 0 0 100% 0;
+  background-color: inherit;
+  top: 0px;
+  right: -65px;
+}
